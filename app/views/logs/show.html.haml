@@ -1,0 +1,17 @@
+%p#notice
+	= notice	
+
+%p
+	%b user:
+	= @log.user.name 
+
+%p
+	%b Description:
+	= @log.description
+	
+%p
+	%b Text:
+	= @log.text
+	
+= link_to 'Edit', edit_log_path(@log)  |
+= link_to 'Back', logs_path 
